@@ -14,4 +14,8 @@ Deployed on Vercel
 https://movie-explorer-nextjs-rayy-ak8juxn81-i1s-akash.vercel.app/
 
 
+# Note
+The application is perfectly responsive, the code is breaking via vercel deployment.
+
+
 
