@@ -1,4 +1,4 @@
-import styles from "../moviedetails.module.scss";
+import styles from "../moviedetails.module.scss"
 const Loader = () => {
   return <div className={styles.main}>Loading...</div>;
 };
