@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import { Button } from "@mui/material";
-import styles from "../movieDetails.module.scss";
+import styles from "../moviedetails.module.scss";
 
 export default function Error({ error, reset }: any) {
   useEffect(() => {
