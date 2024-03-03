@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container, Grid } from "@mui/material";
 import Search from "@/components/Search/Search";
 import MovieCard from "@/components/MovieCard/MovieCard";
@@ -18,17 +18,17 @@ interface This {
 }
 
 const MovieListing: React.FC<This> = (This) => {
-  const [searchInput, setSearchInput] = useState<string>("");
+  const [searchInput, setSearchInput] = React.useState<string>("");
   const handleSearchMovies = (query: string) => {
     setSearchInput(query);
   };
 
-  useEffect(() => {
+  React.useEffect(() => {
     This.fetchMovie(searchInput);
   }, [searchInput]);
 
   const [movieData, setMovieData] = React.useState<MovieData[]>([]);
-  useEffect(() => {
+  React.useEffect(() => {
     let storeData: any = [];
     if (This.movie_data?.results && This.movie_data?.results?.length > 0) {
       This.movie_data?.results?.map((list: MovieData) => {

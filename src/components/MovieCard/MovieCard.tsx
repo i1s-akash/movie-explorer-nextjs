@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "@mui/material";
-import styles from "./MovieCard.module.scss";
+import styles from "./moviecard.module.scss";
 import { MovieData } from "../component.interface";
 
 const MovieCard = ({ id, title, release_date, overview }: MovieData) => {

@@ -1,4 +1,4 @@
-import styles from "../movieDetails.module.scss";
+import styles from "../moviedetails.module.scss";
 import { Container, Grid, Typography, Paper } from "@mui/material";
 
 interface This {
